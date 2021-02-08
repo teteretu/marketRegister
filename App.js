@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" />
       <Stack.Navigator
         screenOptions={{
           headerShown: false,

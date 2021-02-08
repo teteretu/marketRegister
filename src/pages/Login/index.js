@@ -91,9 +91,9 @@ export default class Login extends Component {
           shadowOpacity: 0.58,
           shadowRadius: 16.0,
         }}
-        colors={[Colors.mainBlue, Colors.fBlue]}
+        colors={[Colors.mainGreen, Colors.fGreen]}
         start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
+        end={{ x: 1, y: 1 }}
       >
         <SafeAreaView>
           <View style={{ flex: 1 }}>
