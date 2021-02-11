@@ -7,6 +7,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import SplashScreen from "./src/pages/SplashScreen";
 import Login from "./src/pages/Login";
 import Home from "./src/pages/Home";
+import ProductRegister from "./src/pages/ProductRegister";
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="ProductRegister" component={ProductRegister} />
       </Stack.Navigator>
     </NavigationContainer>
   );
