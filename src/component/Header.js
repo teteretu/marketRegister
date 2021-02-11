@@ -43,8 +43,8 @@ export default class Header extends Component {
         end={{ x: 1, y: 0 }}
       >
         {/* left btn */}
-        <View style={{ width: "17%", paddingLeft: 5 }}>
-          {this.props.removeHeader ? null : (
+        <View style={{ width: "17%", paddingLeft: 15 }}>
+          {this.props.removeLeftBtn ? null : (
             <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
               <AntDesign name="arrowleft" size={24} color="white" />
             </TouchableOpacity>
@@ -73,6 +73,22 @@ export default class Header extends Component {
                 Sair
               </Text>
               <Ionicons name="md-exit" size={30} color="white" />
+            </TouchableOpacity>
+          )}
+          {this.props.closeBtn && (
+            <TouchableOpacity onPress={this.props.closeBtn}>
+              <View>
+                <Text
+                  style={{
+                    color: "#fff",
+                    fontSize: 25,
+                    paddingRight: 15,
+                    textAlign: "right",
+                  }}
+                >
+                  X
+                </Text>
+              </View>
             </TouchableOpacity>
           )}
         </View>

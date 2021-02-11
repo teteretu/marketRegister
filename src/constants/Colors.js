@@ -10,6 +10,7 @@ const fBlue = "#056682";
 const fYellow = "#faa916";
 const fGreen = "#00A572";
 const fGrey = "#2a2d34";
+const lGrey = "#a4a4a4";
 
 const tintColor = "rgba(225,225,225,0.5)";
 
@@ -31,4 +32,5 @@ export default {
   noticeText: "#fff",
   mainGreen,
   fGreen,
+  lGrey,
 };
